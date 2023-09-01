@@ -1,3 +1,10 @@
+import { CardSet } from './CardSet/CardSet';
+
+import cards from '../cards.json';
+
+
+
+
 export const App = () => {
   return (
     <div
@@ -10,7 +17,8 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <CardSet cards={cards}/>
+
     </div>
   );
 };
